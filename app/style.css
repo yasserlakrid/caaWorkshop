@@ -1,0 +1,175 @@
+body{
+    height: 100vh;
+    padding: 0px;
+    background-color: #161616;
+  margin: 20px;
+    overflow: hidden;
+    color: white;
+    margin: 0;
+}
+.searchBar{
+    grid-column: 1/-1;
+    grid-row: 1/2 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left : 20px; ;
+    gap: 20px;
+}
+#card{
+     height: 100vh;
+    width: 100%;
+}
+div{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 5% auto ;
+    grid-template-rows: 5% auto;
+}
+
+
+.searchInputContainner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+}
+.searchInput{
+    height: 40px;
+    max-width: 200px;
+    min-width: 50%;
+    border: none;
+    background-color: #e9e8e8;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius:100px  ;
+    padding: 0px 20px;
+}
+
+.userProfile{
+    width: 100px ;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 30px;
+   
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.youtubeLogo img{
+    height: 40px;
+    width: 40px;
+}
+
+
+.menuToggle img{
+    height: 40px;
+    width: 40px;
+}
+.menuToggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.sider{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    
+    font-size: small;
+    align-items: center;
+    padding-left: 0;
+    grid-row: 2/3;
+}
+.sider .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border-radius: 10px;
+  padding : 20px 10px ;
+  
+  height: 60px;
+  width: 60px;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+p{
+    padding: 0;
+}
+.sider div:hover{
+    background-color: #302f2f;
+}
+.sider div img{
+    
+ height: 30px;
+    width: 30px;
+}
+
+.searchIcon img{
+        width: 40px;
+        height: 40px;
+        
+}
+.searchIcon{
+    background-color: #292929;;
+    padding: auto;
+    border: 1px solid #292929;;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    cursor: pointer;
+      border-top-right-radius: 100px;
+    border-bottom-right-radius:100px  ;
+}
+.mainContent{
+  grid-column:2/3 ;
+  grid-row: 2/3;
+  display: grid;
+  padding: 20px;
+  overflow-y: scroll;
+  
+  grid-template-columns:repeat(auto-fill, minmax(400px ,1fr));
+  gap: 20px;
+
+}
+.videoCard{
+  height: 400px;
+  width: 100%;
+    border-radius: 10px;
+      transition:  0.1s ease;
+      padding: 10px;
+  
+}
+.thumbnail{
+   
+    
+    padding: 10px;
+   
+    
+}
+.thumbnail img{
+    height: 100%;
+    width: 100%;
+   
+    border-radius: 10px;
+}
+.mainContent div{
+      cursor: pointer;
+}
+.videoCard:hover{
+    background-color: #352e2e;
+}
