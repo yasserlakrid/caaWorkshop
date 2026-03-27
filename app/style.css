@@ -2,7 +2,7 @@ body{
     height: 100vh;
     padding: 0px;
     background-color: #161616;
-  margin: 20px;
+    margin: 20px;
     overflow: hidden;
     color: white;
     margin: 0;
@@ -172,4 +172,40 @@ p{
 }
 .videoCard:hover{
     background-color: #352e2e;
+}
+@media (max-width:750px) {
+    body{
+        overflow: hidden ;
+    }
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px auto 80px;    
+        grid-template-areas: "header" "main" "footer";  
+    }
+    .searchBar{ 
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .mainContent{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        place-items: center;
+    }
+    .mainContent div{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sider{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-self: center;
+
+    }
 }
